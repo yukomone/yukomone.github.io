@@ -6,8 +6,23 @@ body,*{
     color: white;
 }
 #navig{
-
+    width: 20%;
+    height: 90%;
+    float:left;
+    border: 1px solid pink;
+    box-sizing: border-box;
 }
 .pages{
-    
+    height: 30px;
+    width:100%;
+    float:left;
+    border: 1px solid pink;
+    box-sizing: border-box;
+}
+main{
+    float:left;
+    box-sizing: border-box;
+    width: 80%;
+    height:90%;
+    border: 1px solid pink;
 }
