@@ -33,6 +33,13 @@ h3{
     float:left;
     box-sizing: border-box;
     background-color: rgb(255, 117, 140);
+    text-transform: uppercase;
+    text-shadow: 3px -3px black;
+    font-size: 27px;
+}
+#navig a:hover{
+    text-shadow: 3px -3px white;
+    color: black;
 }
 .pages{
     line-height: 5%;
@@ -46,6 +53,7 @@ main{
     box-sizing: border-box;
     width: 80%;
     height:1000px;
+    background-color: rgb(255, 187, 202);
 }
 
 #colors{
