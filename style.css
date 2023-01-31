@@ -7,7 +7,7 @@ body,*{
 }
 #navig{
     width: 20%;
-    height: 90%;
+    height: 1000px;
     float:left;
     border: 1px solid pink;
     box-sizing: border-box;
@@ -15,7 +15,7 @@ body,*{
 .pages{
     height: 30px;
     width:100%;
-    float:left;
+    float:right;
     border: 1px solid pink;
     box-sizing: border-box;
 }
@@ -23,6 +23,6 @@ main{
     float:left;
     box-sizing: border-box;
     width: 80%;
-    height:90%;
+    height:1000px;
     border: 1px solid pink;
 }
