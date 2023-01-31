@@ -2,22 +2,28 @@ body{
     margin:0;
 }
 body,*{
-    background-color: black;
     color: white;
+    text-align:center;
+}
+#banner{
+    width: 100%;
+    background-color: rgb(231, 72, 99);
+    line-height: 40px;
+    float:left;
+    
 }
 #navig{
     width: 20%;
     height: 1000px;
     float:left;
-    border: 1px solid pink;
     box-sizing: border-box;
+    background-color: pink;
 }
 .pages{
     line-height: 5%;
     text-align: center;
     width:100%;
     float:right;
-    border: 1px solid pink;
     box-sizing: border-box;
 }
 main{
@@ -25,49 +31,6 @@ main{
     box-sizing: border-box;
     width: 80%;
     height:1000px;
-    border: 1px solid pink;
+    background-color:aqua;
 }
 
-#colors{
-    width: 20%;
-    height: 90%;
-    border: 1px solid pink;
-    box-sizing: border-box;
-    float:left;
-    text-align: center;
-}
-#colors input[type='color']{
-    width:200%;
-    padding:0;
-    margin:0;
-    height:200%;
-    transform: translate(-25%, -25%);
-}
-.colorsBorder{
-    border-radius: 5px;
-    overflow:hidden;
-    border: 1px solid rgb(255, 238, 0);
-    margin-bottom: 30px;
-    width:80%;
-    margin: 0 auto 0 auto;
-}
-.colorsBorder2{
-    border-radius: 5px;
-    margin:0;
-    padding:0;
-    height: fit-content;
-    overflow:hidden;
-    height: 30px;
-    border: 3px solid rgb(0, 0, 0);
-}
-.colorHEX{
-    background-color: rgba(200,200,200,0.3);
-    width: fit-content;
-}
-#visual{
-    width: 80%;
-    height: 90%;
-    border: 1px solid pink;
-    box-sizing: border-box;
-    float:left;
-}
