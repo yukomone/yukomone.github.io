@@ -26,6 +26,7 @@ h3{
     background-color: rgba(0, 0, 0, 0.3);
     padding: auto;
     width: fit-content;
+    text-transform: uppercase;
 }
 #navig{
     width: 20%;
@@ -180,4 +181,7 @@ main{
     text-shadow: 3px -3px white;
     color: black;
     padding-top: 10px;
+}
+#mainCircle{
+    text-transform: uppercase;
 }
