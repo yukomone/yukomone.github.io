@@ -70,10 +70,11 @@
                 colorword = "color"+i;
                 colorHEX = "colorHEX"+i;
                 c = "c"+i;
-                    code = document.getElementById(colorword).value;
-                    document.getElementById(colorHEX).innerHTML=code;
-                    document.getElementById("c"+1).innerHTML=code;
-                    document.getElementById(c).style.backgroundColor=code;
+                console.log(colorword, colorHEX, c);
+                    document.getElementById(colorword).value = colors[i];
+                    document.getElementById(colorHEX).innerHTML=colors[i];
+                    document.getElementById(c).innerHTML=colors[i];
+                    document.getElementById(c).style.backgroundColor=colors[i];
             }
         }
         function color(numer){
