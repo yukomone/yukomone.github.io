@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Everything</title>
-    <link rel="stylesheet" href="./colors.css">
+    <link rel="stylesheet" href="./weather.css">
 </head>
 <body>
     <nav id="banner">
@@ -13,10 +13,34 @@
         </h1>
     </nav>
     <main>
-        
+        <section id="buttons">
+            <input type="number" name="lat" id="lat" placeholder="lat...">
+            <button class="setting">SET</button>
+            <input type="number" name="lon" id="lon" placeholder="lon...">
+        </section>
+        <p id="or">OR</p>
+        <section id="buttons">
+            <input type="text" name="qe" id="qe" placeholder="town...">
+            <button class="setting" id="setting2">SET</button>
+        </section>
+
+        <section id="space">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </section>
+
+        <section id="resp">
+            <img src="">
+            <p id="name">Weather in...</p>
+            <p id="temp"></p>
+            <p id="feels"></p>
+            <p id="humidity"></p>
+            <p id="pressure"></p>
+        </section>
     </main>
     <script>
-        
+
     </script>
     <aside id="navig">
         <h3>PAGES</h3>
