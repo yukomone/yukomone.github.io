@@ -13,6 +13,11 @@
         </h1>
     </nav>
     <main>
+        <section id="apikey">
+            <input type="text" name="api" id="api" placeholder="your api key from openweathermap...">
+        </section>
+
+        <p id="or">AND</p>
         <section class="buttons">
             <input type="number" name="lat" id="lat" placeholder="lat...">
             <button class="setting">SET</button>
@@ -28,12 +33,13 @@
         <br><section id="mainresp"></section>
         
     </main>
-    <script type="text/javascript" src="../config.js"></script>
-    <script type="text/javascript" src="./script.js"></script>
+    <!--<script type="text/javascript" src="../config.js"></script>
+    <script type="text/javascript" src="./script.js"></script>-->
     <script>
         
 
         function ask1(){
+            key = document.getElementById('api').value;
             town = document.getElementById('qe').value;
             fetch(`https://api.openweathermap.org/data/2.5/weather?appid=${key}&units=metric&q=${town}`)
                 .then( res => {
