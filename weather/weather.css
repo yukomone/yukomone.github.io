@@ -135,3 +135,12 @@ button:hover{
     box-shadow: 5px 5px 5px rgb(75, 75, 75);
     border-radius: 25px;
 }
+#name{
+    font-weight: bold;
+}
+#obrazek{
+    width: 100px;
+}
+.bold{
+    font-weight: bold;
+}
