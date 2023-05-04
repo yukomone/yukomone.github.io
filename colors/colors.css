@@ -1,0 +1,187 @@
+body{
+    margin:0;
+}
+body,*{
+    color: white;
+    text-align:center;
+}
+#banner{
+    width: 100%;
+    background-color: rgb(211, 32, 71);
+    line-height: 40px;
+    float:left;
+    font-size: 30px;
+    text-shadow: 4px 4px black;
+}
+h3{
+    font-size: 27px;
+}
+#colors h3{
+    text-shadow: 3px -3px black;
+}
+#colors p{
+    margin: 20px auto 20px auto;
+    text-shadow: 2px -2px rgb(56, 56, 56);
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: auto;
+    width: fit-content;
+    text-transform: uppercase;
+}
+#navig{
+    width: 20%;
+    height: 1000px;
+    float:left;
+    box-sizing: border-box;
+    background-color: rgb(255, 117, 140);
+    text-transform: uppercase;
+    text-shadow: 3px -3px black;
+    font-size: 27px;
+}
+#navig a:hover{
+    text-shadow: 3px -3px white;
+    color: black;
+}
+.pages{
+    line-height: 5%;
+    text-align: center;
+    width:100%;
+    float:right;
+    box-sizing: border-box;
+}
+main{
+    float:left;
+    box-sizing: border-box;
+    width: 80%;
+    height:1000px;
+    background-color: rgb(255, 187, 202);
+}
+
+#colors{
+    width: 30%;
+    height: 100%;
+    box-sizing: border-box;
+    float:left;
+    text-align: center;
+    background-color: rgb(255, 117, 140);
+}
+#colors input[type='color']{
+    width:200%;
+    padding:0;
+    margin:0;
+    height:200%;
+    transform: translate(-25%, -25%);
+}
+.colorsBorder{
+    border-radius: 15px;
+    overflow:hidden;
+    border: 2px solid rgb(255, 255, 255);
+    margin-bottom: 20px;
+    width:80%;
+    margin: 0 auto 0 auto;
+}
+.colorsBorder2{
+    border-radius: 15px;
+    margin:0;
+    padding:0;
+    height: fit-content;
+    overflow:hidden;
+    height: 40px;
+    border: 3px solid rgb(0, 0, 0);
+}
+#visual{
+    width: 70%;
+    height: 100%;
+    border: 1px solid pink;
+    box-sizing: border-box;
+    float:left;
+    background-color: rgb(255, 187, 202);
+    position:relative;
+}
+#c1{
+    position: absolute;
+    width: 120px;
+    height:120px;
+    line-height: 120px;
+    border-radius: 50%;
+    background-color: #FFFD8F;
+    top: 40px;
+    left: 40%;
+    border: 3px solid white;
+    text-shadow: 1px 1px 10px black;
+}
+#c2{
+    position: absolute;
+    width: 200px;
+    height:200px;
+    line-height: 200px;
+    border-radius: 50%;
+    background-color: #FFFA00;
+    top: 50px;
+    left: 20%;
+    border: 3px solid white;
+    text-shadow: 1px 1px 10px black;
+}
+#c3{
+    position: absolute;
+    width: 150px;
+    height:150px;
+    line-height: 150px;
+    border-radius: 50%;
+    background-color: #A49500;
+    top: 230px;
+    left: 60%;
+    border: 3px solid white;
+    text-shadow: 1px 1px 10px black;
+}
+#c4{
+    position: absolute;
+    width: 170px;
+    height:170px;
+    line-height: 170px;
+    border-radius: 50%;
+    background-color: #403910;
+    top: 110px;
+    left: 50%;
+    border: 3px solid white;
+    text-shadow: 1px 1px 10px black;
+}
+#c5{
+    position: absolute;
+    width: 250px;
+    height:250px;
+    line-height: 250px;
+    border-radius: 50%;
+    background-color: #0A0700;
+    top: 150px;
+    left: 30%;
+    border: 3px solid white;
+    text-shadow: 1px 1px 10px black;
+}
+#visual button{
+    top: 500px;
+    left: 40%;
+    position:absolute;
+    width: 20%;
+    height: 50px;
+    font-size: 30px;
+    background-color: rgb(255, 117, 140);
+    border: 3px solid white;
+    border-radius: 10px;
+    font-family: times;
+    text-shadow: 3px -3px black;
+    padding-top: 10px;
+}
+#visual button:hover{
+    background-color: rgb(255, 58, 91);
+    border: 3px solid rgb(255, 204, 204);
+    border-color: rgb(255, 150, 168);
+    border-radius: 10px;
+    font-family: times;
+    text-shadow: 3px -3px white;
+    color: black;
+    padding-top: 10px;
+}
+#mainCircle{
+    text-transform: uppercase;
+}
