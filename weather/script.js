@@ -1,1 +1,0 @@
-var key = config.API_KEY;
