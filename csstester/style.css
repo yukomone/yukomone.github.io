@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    min-height: 95vh;
+    margin: 0;
+}
+/*content area*/
+#content {
+    width: 75%;
+    border-right: 5px #9b4aff solid;
+    padding: 3%;
+}
+
+/*editable area*/
+#editable {
+    width: 25%;
+    padding: 3%;
+    background-color: #9664c6;
+    color: #d3a3ff;
+    font-family: Helvetica !important;
+    border-left: 5px white dashed;
+}
+#editable textarea {
+    width: 100%;
+    min-height: 350px;
+    margin-bottom: 20px;
+    font-family: monospace !important;
+    line-height: 20px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #e2d3fd;
+    color: #3a0078;
+    border-radius: 8px;
+    border-width: 3px;
+    border-color: white;
+    border-style: dashed;
+}
+.fancyh2 {
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.fancyh2 img {
+    height: 35px;
+    width: auto;
+    border-radius: 100%;
+    border-style: dashed;
+    border-color: #e2c4ff;
+    border-width: 5px;
+}
+.fancyh2 p {
+    margin: 0;
+    text-shadow: 1px 1px white;
+}

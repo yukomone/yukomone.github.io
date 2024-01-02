@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS tester</title>
+    <style></style>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section id="content">
+    </section>
+
+    <section id="editable">
+        <div class="fancyh2">
+            <img src="./babushkaicon.png" alt="caticon">&nbsp;
+            <p class="editableh2">CSS:</p>
+        </div>
+        <textarea id="styleeditable" spellcheck="false">
+html {
+    background-color: #b397ce;
+    color: white;
+    font-family: Helvetica;
+}
+img {
+    width: 50%;
+    border-radius: 10px;
+    border-style: dashed;
+    border-color: white;
+    border-width: 3px;
+}
+button {
+    margin: 3px;
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+    border-color: #b397ce;
+    border-width: 4px;
+    background-color: #e0d1fd;
+    color: #ab74df;
+    font-weight: bolder;
+}
+button:hover {
+    border-color: #e5d9f2;
+    background-color: #b397ce;
+    color: white;
+    font-weight: bolder;
+}
+#catsection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    background-color: #cbb2fe;
+    padding: 20px;
+    border-radius: 10px;
+}
+</textarea>
+
+        <div class="fancyh2">
+            <img src="./babushkaicon.png" alt="caticon">&nbsp;
+            <p class="editableh2">Content:</p>
+        </div>
+        <textarea id="contenteditable" spellcheck="false">
+<h2>i love cats</h2>
+<p>i love cats to the moon and back</p>
+<a href="https://www.amazon.com/How-Talk-Your-About-Safety/dp/045149492X" target="_blank">How to talk to your cat about gun safety (Amazon)</a>
+<br><br>
+<section id="catsection">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Calico_tabby_cat_-_Savannah.jpg/1200px-Calico_tabby_cat_-_Savannah.jpg" alt="cat">
+    <button>cat</button>
+    <button>uncat</button>
+</section>
+        </textarea>
+    </section>
+    
+    <script src="./script.js"></script>
+</body>
+</html>
