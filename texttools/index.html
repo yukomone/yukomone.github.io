@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text tools</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/pusheen.png" type="image/x-icon">
+</head>
+<body>
+   <section id="firstsection">
+        <section class="block">
+            <p class="titles">To uppercase</p>
+            <p class="subtitles">Text:</p>
+            <textarea id="textupper" placeholder="Plain text" spellcheck="false"></textarea>
+            <p class="subtitles">Result:</p>
+            <textarea id="resultupper" placeholder="Result" spellcheck="false"></textarea>
+            <button onclick="buttonUpper()">Click to copy&nbsp;<img src="./images/copy.png" alt="copy"></button>
+        </section>
+   </section>
+
+   <section id="secondsection">
+        <section class="block">
+            <p class="titles">To lowercase</p>
+            <p class="subtitles">Text:</p>
+            <textarea id="textlower" placeholder="Plain text" spellcheck="false"></textarea>
+            <p class="subtitles">Result:</p>
+            <textarea id="resultlower" placeholder="Result" spellcheck="false"></textarea>
+            <button onclick="buttonLower()">Click to copy&nbsp;<img src="./images/copy.png" alt="copy"></button>
+        </section>
+        <section class="block">
+            <p class="titles">Trimming</p>
+            <p class="subtitles">Text:</p>
+            <textarea id="texttrimming" placeholder="Plain text" spellcheck="false"></textarea>
+            <p class="subtitles">Length:</p>
+            <textarea id="texttrimminglength" placeholder="Text length" spellcheck="false"></textarea>
+            <p class="subtitles">Result:</p>
+            <textarea id="resulttrimming" placeholder="Result" spellcheck="false"></textarea>
+            <button onclick="buttonTrimming()">Click to copy&nbsp;<img src="./images/copy.png" alt="copy"></button>
+        </section>
+    </section> 
+
+   <section id="thirdsection">
+        <section class="block">
+            <p class="titles">Length</p>
+            <p class="subtitles">Text:</p>
+            <textarea id="textlength" placeholder="Plain text" spellcheck="false"></textarea>
+            <p class="subtitles">Result:</p>
+            <textarea id="resultlength" placeholder="Result" spellcheck="false"></textarea>
+            <button onclick="buttonLength()">Click to copy&nbsp;<img src="./images/copy.png" alt="copy"></button>
+        </section>
+    </section> 
+
+    
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -6,15 +6,16 @@
     <title>CSS tester</title>
     <style></style>
     <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./babushkaicon.png" type="image/x-icon">
 </head>
 <body>
     <section id="content">
     </section>
 
     <section id="editable">
-        <div class="fancyh2">
+        <div class="fancy">
             <img src="./babushkaicon.png" alt="caticon">&nbsp;
-            <p class="editableh2">CSS:</p>
+            <p class="editablep">CSS:</p>
         </div>
         <textarea id="styleeditable" spellcheck="false">
 html {
@@ -57,9 +58,9 @@ button:hover {
 }
 </textarea>
 
-        <div class="fancyh2">
+        <div class="fancy">
             <img src="./babushkaicon.png" alt="caticon">&nbsp;
-            <p class="editableh2">Content:</p>
+            <p class="editablep">Content:</p>
         </div>
         <textarea id="contenteditable" spellcheck="false">
 <h2>i love cats</h2>
@@ -68,8 +69,8 @@ button:hover {
 <br><br>
 <section id="catsection">
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Calico_tabby_cat_-_Savannah.jpg/1200px-Calico_tabby_cat_-_Savannah.jpg" alt="cat">
-    <button>cat</button>
-    <button>uncat</button>
+    <button onclick="alert('cat')">cat</button>
+    <button onclick="alert('uncat')">uncat</button>
 </section>
         </textarea>
     </section>

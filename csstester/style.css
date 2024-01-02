@@ -14,16 +14,16 @@ body {
 #editable {
     width: 25%;
     padding: 3%;
-    background-color: #9664c6;
+    background-color: #9664c6 !important;
     color: #d3a3ff;
-    font-family: Helvetica !important;
+    font-family: Helvetica;
     border-left: 5px white dashed;
 }
 #editable textarea {
     width: 100%;
     min-height: 350px;
     margin-bottom: 20px;
-    font-family: monospace !important;
+    font-family: monospace;
     line-height: 20px;
     font-weight: bold;
     padding: 10px;
@@ -34,7 +34,7 @@ body {
     border-color: white;
     border-style: dashed;
 }
-.fancyh2 {
+.fancy {
     display: flex;
     align-items: center;
     font-weight: 900;
@@ -42,15 +42,16 @@ body {
     margin-bottom: 10px;
     margin-top: 10px;
 }
-.fancyh2 img {
+.fancy img {
     height: 35px;
     width: auto;
     border-radius: 100%;
     border-style: dashed;
-    border-color: #e2c4ff;
+    border-color: #e2c4ff !important;
     border-width: 5px;
 }
-.fancyh2 p {
+.fancy .editablep {
     margin: 0;
-    text-shadow: 1px 1px white;
+    text-shadow: 1px 1px white !important;
+    color: #d3a3ff !important;
 }
