@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="pusheen1.png" type="image/x-icon">
+</head>
+<body class="chcolorbackground">
+   <section id="main">
+        <h1>Colors</h1>
+        <div id="colorsection1">
+            <div id="colorplace1" class="chcolorbackground"></div>
+            <div>
+                <p class="pname">Black</p>
+                <p class="phex">#000000</p>
+                <p class="prgb">RGB(0, 0, 0)</p>
+            </div>
+        </div>
+        <p style="margin-bottom: 0;">RGB</p>
+        <div id="colorsection2">
+            <div class="colorsection2div"><p>Red:</p><div id="red"></div></div>
+            <div class="colorsection2div"><p>Green:</p><div id="green"></div></div>
+            <div class="colorsection2div"><p>Blue:</p><div id="blue"></div></div>
+        </div>
+        <p style="margin-bottom: 0;">HSL</p>
+        <div id="colorsection3">
+            <div class="colorsection3div"><p>Saturation:</p><div id="saturation"></div></div>
+            <div class="colorsection3div"><p>Hue:</p><div id="hue"></div></div>
+            <div class="colorsection3div"><p>Lightness:</p><div id="lightness"></div></div>
+        </div>
+        <p style="margin-bottom: 0;">Text</p>
+        <div class="colorsection4">
+            <div class="colorsection4div">
+                <div style="background-color: white;"><p class="chcolortext">Watashi wa neko ga daisuki</p></div>
+                <div style="background-color: black;"><p class="chcolortext">Watashi wa neko ga daisuki</p></div>
+                <div style="color: white;" class="chcolorbackground"><p>Watashi wa neko ga daisuki</p></div>
+                <div style="color: black;" class="chcolorbackground"><p>Watashi wa neko ga daisuki</p></div>
+            </div>
+            <div class="colorsection4div">
+                <div style="background-color: white; color: black;"><p class="chcolorshadow">Watashi wa neko ga daisuki</p></div>
+                <div style="background-color: black; color: white;"><p class="chcolorshadow">Watashi wa neko ga daisuki</p></div>
+                <div style="color: black;" class="chcolorbackground"><p style="text-shadow: 0px 2px 10px white;">Watashi wa neko ga daisuki</p></div>
+                <div style="color: white;" class="chcolorbackground"><p style="text-shadow: 0px 2px 10px black;">Watashi wa neko ga daisuki</p></div>
+            </div>
+            <div class="colorsection4div">
+                <div style="background-color: white; color: black;"><p class="chcolorshadow2">Watashi wa neko ga daisuki</p></div>
+                <div style="background-color: black; color: white;"><p class="chcolorshadow2">Watashi wa neko ga daisuki</p></div>
+                <div style="color: black;" class="chcolorbackground"><p style="text-shadow: 5px 3px white;">Watashi wa neko ga daisuki</p></div>
+                <div style="color: white;" class="chcolorbackground"><p style="text-shadow: 5px 3px black;">Watashi wa neko ga daisuki</p></div>
+            </div>
+        </div>
+        <p>Blocks</p>
+        <div class="colorsection4">
+            <div class="colorsection4div">
+                <div style="background-color: white;"><section class="chcolorbackground" style="width: 50%; height: 50%;"></section></div>
+                <div style="background-color: black;"><section class="chcolorbackground" style="width: 50%; height: 50%;"></section></div>
+            </div>
+            <div class="colorsection4div">
+                <div class="chcolorbackground"><section style="width: 50%; height: 50%; background-color: white;"></section></div>
+                <div class="chcolorbackground"><section style="width: 50%; height: 50%; background-color: black;"></section></div>
+            </div>
+            <div class="colorsection4div">
+                <div style="background-color: black;"><section class="chcolorborder" style="width: 50%; height: 50%; background-color: white;"></section></div>
+                <div style="background-color: white;"><section class="chcolorborder" style="width: 50%; height: 50%; background-color: black;"></section></div>
+            </div>
+        </div>
+   </section> 
+
+   <section id="colors">
+        <p>Color picker:</p>
+        <input type="color" id="colorpicker" value="#000000"><br><br>
+        <span>or</span><br><br>
+        <p>HEX:</p>
+        <input type="text" id="hex" placeholder="#000000">
+   </section>
+
+   
+   <script src="./script.js"></script>
+</body>
+</html>
