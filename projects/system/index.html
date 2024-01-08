@@ -4,64 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Everything</title>
+    <title>Windows-like page</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <nav id="banner">
-        <h1>yukomone
-        </h1>
+        <h1>Windows-like page</h1>
     </nav>
     <main>
-        <div id="tlo" onclick="winoff()">
-            <br>
-            <div class="icons"><img src="./images/icon.png" alt="" width="80px"><br>cat.png</div><br>
-            <div class="icons"><img src="./images/icon.png" alt="" width="80px"><br>cat.png</div><br>
-            <div class="icons"><img src="./images/icon.png" alt="" width="80px"><br>cat.png</div><br>
-            <div class="icons"><img src="./images/icon.png" alt="" width="80px"><br>cat.png</div><br>
-            <div class="icons"><img src="./images/icon.png" alt="" width="80px"><br>cat.png</div><br>
+        <div id="system">
+            <div id="tlo" onclick="winoff()">
+                <br>
+                <div class="icons"><img src="./images/icon.png" alt="" width="80px"><br>cat.png</div><br>
+                <div class="icons"><img src="./images/icon.png" alt="" width="80px"><br>cat.png</div><br>
+                <div class="icons"><img src="./images/icon.png" alt="" width="80px"><br>cat.png</div><br>
+                <div class="icons"><img src="./images/icon.png" alt="" width="80px"><br>cat.png</div><br>
+                <div class="icons"><img src="./images/icon.png" alt="" width="80px"><br>cat.png</div><br>
+            <div id="winpanel"></div>
+            </div>
+            <div id="panel">
+                &nbsp;<img src="./images/windows.png" class="panelicons" alt="" onclick="win()">
+                <img src="./images/icon.png" class="panelicons" id="win" alt="">
+                <img src="./images/icon.png" class="panelicons" alt="">
+                <img src="./images/icon.png" class="panelicons" alt="">
+                <img src="./images/icon.png" class="panelicons" alt="">
 
-        <script>
-            function winoff(){
-                document.getElementById('winpanel').style.display='none';
- 
-            }
-            function win(){
-                document.getElementById('winpanel').style.backgroundColor='black';
-                document.getElementById('winpanel').style.width='20%';
-                document.getElementById('winpanel').style.height='20%';
-                document.getElementById('winpanel').style.position='absolute';
-                document.getElementById('winpanel').style.bottom='70px';
-                document.getElementById('winpanel').style.display='block';
-               
-                document.getElementById('winpanel').innerHTML=`<p id='winpanelelem'><img src='./images/icon.png' style='margin-top: 10px;' width='30px'><span id='winpanelelemtext'>&nbsp;Cats</span></p>`;
-            }
-        </script>
-        <div id="winpanel"></div>
-    </div>
-        <div id="panel">
-            &nbsp;<img src="./images/windows.png" class="panelicons" alt="" onclick="win()">
-            <img src="./images/icon.png" class="panelicons" id="win" alt="">
-            <img src="./images/icon.png" class="panelicons" alt="">
-            <img src="./images/icon.png" class="panelicons" alt="">
-            <img src="./images/icon.png" class="panelicons" alt="">
-
-            <p style="text-align: right;" id="data">
-            <script>setInterval( function czas(){
-            data = new Date();
-            document.getElementById('data').innerHTML=data.toLocaleString();
-            },1000);
-            </script></p>
+                <p style="text-align: right;" id="data"></p>
+            </div>
         </div>
     </main>
-  
-    <aside id="navig">
-        <h3>PAGES</h3>
-        <section class="pages"><p><a href='./../../index.html'>main</a></p></section>
-        <section class="pages"><p><a href='./../../projects/colors/colors.html'>color palette</a></p></section>
-        <section class="pages"><p><a href='./../..//projects/weather/weather.html'>weather</a></p></section>
-        <section class="pages"><p><a href='./../../projects/system/index.html'>system</a></p></section>
-    </aside>
+    <script src="./script.js"></script>
 </body>
 </html>
 <!--
