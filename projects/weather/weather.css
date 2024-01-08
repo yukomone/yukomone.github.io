@@ -1,101 +1,70 @@
-body{
+body {
     margin:0;
+    display: flex;
+    flex-direction: column;
+    height: 120vh;
 }
-body,*{
-    color: white;
+* {
     text-align:center;
+    color: white;
 }
-#banner{
+#banner {
     width: 100%;
     background-color: rgb(211, 32, 71);
     line-height: 40px;
-    float:left;
     font-size: 30px;
     text-shadow: 1px 1px 15px black;
 }
-h3{
-    font-size: 27px;
-}
-#navig{
-    width: 20%;
-    height: 1000px;
-    float:left;
+main {
     box-sizing: border-box;
-    background-color: rgb(255, 117, 140);
-    text-transform: uppercase;
-    text-shadow: 0 0 5px black;
-    font-size: 27px;
-    float:right;
-}
-.pages a{
-    text-decoration: none;
-}
-.pages{
-    line-height: 5%;
-    text-align: center;
-    width:100%;
-    float:right;
-    box-sizing: border-box;
-}
-main{
-    float:left;
-    box-sizing: border-box;
-    width: 80%;
-    height:1000px;
+    width: 100%;
+    height: 100%;
     background-color: rgb(255, 187, 202);
     padding-top: 40px;
 }
-
-#navig a:hover{
-    text-shadow: 0 0 5px rgb(255, 194, 235);
-    color: rgb(0, 0, 0);
-    transition: color 1s ease;
-}
-
-.setting,#lat,#lon,#qe{
+.setting, #lat, #lon, #qe {
     height: 30px;
     width: 100px;
     box-sizing: border-box;
 }
-#or{
+#or {
     text-shadow: 2px 2px 2px black;
     margin-top: 25px;
     margin-bottom: 25px;
 }
-#qe{
+#qe {
     border: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     color: black;
     padding: 0;
 }
-#lat{
+#lat {
     border: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
     color: black;
     padding: 0;
 }
-.setting{
-    border-radius:0;
+.setting {
+    border-radius: 0;
     border: none;
-    margin:0;
+    margin: 0;
 }
-#setting2{
-    border:none;
+#setting2 {
+    border: none;
     border-radius: 5px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
-
-#lon{
+#lon {
     border: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
     color: black;
     padding: 0;
 }
-.buttons{
+.buttons {
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     width: fit-content;
@@ -104,7 +73,7 @@ main{
    margin-top: 30px;
    box-shadow: 5px 5px 5px rgb(75, 75, 75);
 }
-#space{
+#space {
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
@@ -112,25 +81,25 @@ main{
     display: flex;
     justify-content: center;
 }
-.circle{
+.circle {
     width:10px;
     height:10px;
     border-radius:50%;
     background-color: rgb(255, 255, 255);
     margin-right:5px;
     margin-left:5px;
-    float:left;
+    float: left;
     box-shadow: 3px 3px 2px black;
 }
-button{
+button {
     background-color: rgb(145, 145, 145);
     text-shadow: 2px 2px 3px black;
 }
-button:hover{
+button:hover {
     background-color: rgb(100, 100, 100);
 }
 
-#resp{
+#resp {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
@@ -140,16 +109,16 @@ button:hover{
     box-shadow: 5px 5px 5px rgb(75, 75, 75);
     border-radius: 25px;
 }
-#name{
+#name {
     font-weight: bold;
 }
-#obrazek{
+#obrazek {
     width: 100px;
 }
-.bold{
+.bold {
     font-weight: bold;
 }
-#api{
+#api {
    box-shadow: 5px 5px 5px rgb(75, 75, 75);
    height: 30px;
    width: 300px;
