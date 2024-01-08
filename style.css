@@ -45,7 +45,7 @@ main{
 }
 .pointing::before{
     content: "";
-    background: url(./pointing2.png);
+    background: url(./images/pointing2.png);
     background-repeat: no-repeat;
     display: inline-block;
     background-size: 40px 30px;
@@ -57,7 +57,7 @@ main{
 }
 .pointing::after{
     content: "";
-    background: url(./pointing2.png);
+    background: url(./images/pointing2.png);
     background-repeat: no-repeat;
     display: inline-block;
     background-size: 40px 30px;
@@ -68,7 +68,7 @@ main{
 }
 p:hover > .pointing::after,p:hover > .pointing::before{
     content: "";
-    background: url(./pointing.png);
+    background: url(./images/pointing.png);
     background-repeat: no-repeat;
     display: inline-block;
     background-size: 40px 30px;
