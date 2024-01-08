@@ -1,110 +1,86 @@
-body{
+body {
     margin:0;
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana;
 }
-body,*{
+body, * {
     color: white;
-    text-align:center;
+    text-align: center;
 }
-#banner{
+#banner {
     width: 100%;
-    background-color: rgb(211, 32, 71);
+    background-color: #8a817c;
     line-height: 40px;
-    float:left;
-    font-size: 30px;
-    text-shadow: 1px 1px 15px black;
+    font-size: 50px;
+    font-weight: bolder;
+    box-shadow: 0 0 5px gray;
+    z-index: 40;
 }
-h3{
-    font-size: 27px;
-}
-#colors h3{
+#colors h3 {
     text-shadow: 0 0 5px black;
 }
-#colors p{
+#colors .colorHEX {
     margin: 20px auto 20px auto;
-    text-shadow: 2px -2px rgb(56, 56, 56);
-    font-size: 25px;
-    background-color: rgba(0, 0, 0, 0.3);
+    color: rgb(63, 63, 63);
+    font-weight: 700;
+    font-size: 20px;
     padding: auto;
     width: fit-content;
     text-transform: uppercase;
 }
-#navig{
-    width: 20%;
+#colorsName {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+}
+main {
+    box-sizing: border-box;
+    width: 100%;
     height: 1000px;
-    float:left;
-    box-sizing: border-box;
-    background-color: rgb(255, 117, 140);
-    text-transform: uppercase;
-    text-shadow: 0 0 5px black;
-    font-size: 27px;
+    background-color: #bcb8b1;
+    display: flex;
 }
 
-.pages{
-    line-height: 5%;
-    text-align: center;
-    width:100%;
-    float:right;
-    box-sizing: border-box;
-    text-shadow: 0 0 5px rgb(255, 194, 235);
-}
-.pages a:hover{
-    color: rgb(0, 0, 0);
-    transition: color 1s ease;
-}
-.pages a{   
-    text-decoration: none;
-    text-shadow: 0 0 5px black;
-}
-main{
-    float:left;
-    box-sizing: border-box;
-    width: 80%;
-    height:1000px;
-    background-color: rgb(255, 187, 202);
-}
-
-#colors{
-    width: 30%;
+#colors {
+    width: 40%;
     height: 100%;
     box-sizing: border-box;
-    float:left;
+    float: left;
     text-align: center;
-    background-color: rgb(255, 117, 140);
+    background-color: #bcb8b1;
 }
-#colors input[type='color']{
-    width:200%;
-    padding:0;
-    margin:0;
-    height:200%;
+#colors input[type='color'] {
+    width: 200%;
+    height: 200%;
+    padding: 0;
+    margin: 0;
     transform: translate(-25%, -25%);
 }
-.colorsBorder{
+.colorsBorder {
     border-radius: 15px;
-    overflow:hidden;
-    border: 2px solid rgb(255, 255, 255);
+    overflow: hidden;
+    box-shadow: 2px 2px 2px black;
     margin-bottom: 20px;
-    width:80%;
+    width: 80%;
     margin: 0 auto 0 auto;
 }
-.colorsBorder2{
+.colorsBorder2 {
     border-radius: 15px;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
     height: fit-content;
-    overflow:hidden;
+    overflow: hidden;
     height: 40px;
-    border: 3px solid rgb(0, 0, 0);
 }
-#visual{
-    width: 70%;
+#visual {
+    width: 60%;
     height: 100%;
-    border: 1px solid pink;
     box-sizing: border-box;
-    float:left;
-    background-color: rgb(255, 187, 202);
-    position:relative;
+    background-color: #bcb8b1;
+    position: relative;
 }
-#c1{
+#c1 {
     position: absolute;
     width: 120px;
     height:120px;
@@ -113,34 +89,43 @@ main{
     background-color: #FFFD8F;
     top: 40px;
     left: 40%;
-    border: 3px solid white;
-    text-shadow: 1px 1px 10px black;
+    text-shadow: -1px 1px 0 black,
+    1px 1px 0 black,
+    1px -1px 0 black,
+    -1px -1px 0 black;
+    box-shadow: 2px 2px 2px black;
 }
-#c2{
+#c2 {
     position: absolute;
     width: 200px;
-    height:200px;
+    height: 200px;
     line-height: 200px;
     border-radius: 50%;
     background-color: #FFFA00;
     top: 50px;
     left: 20%;
-    border: 3px solid white;
-    text-shadow: 1px 1px 10px black;
+    text-shadow: -1px 1px 0 black,
+    1px 1px 0 black,
+    1px -1px 0 black,
+    -1px -1px 0 black;
+    box-shadow: 2px 2px 2px black;
 }
-#c3{
+#c3 {
     position: absolute;
     width: 150px;
-    height:150px;
+    height: 150px;
     line-height: 150px;
     border-radius: 50%;
     background-color: #A49500;
     top: 230px;
     left: 60%;
-    border: 3px solid white;
-    text-shadow: 1px 1px 10px black;
+    text-shadow: -1px 1px 0 black,
+    1px 1px 0 black,
+    1px -1px 0 black,
+    -1px -1px 0 black;
+    box-shadow: 2px 2px 2px black;
 }
-#c4{
+#c4 {
     position: absolute;
     width: 170px;
     height:170px;
@@ -149,44 +134,51 @@ main{
     background-color: #403910;
     top: 110px;
     left: 50%;
-    border: 3px solid white;
-    text-shadow: 1px 1px 10px black;
+    text-shadow: -1px 1px 0 black,
+    1px 1px 0 black,
+    1px -1px 0 black,
+    -1px -1px 0 black;
+    box-shadow: 2px 2px 2px black;
 }
-#c5{
+#c5 {
     position: absolute;
     width: 250px;
-    height:250px;
+    height: 250px;
     line-height: 250px;
     border-radius: 50%;
     background-color: #0A0700;
     top: 150px;
     left: 30%;
-    border: 3px solid white;
-    text-shadow: 1px 1px 10px black;
+    text-shadow: -1px 1px 0 black,
+    1px 1px 0 black,
+    1px -1px 0 black,
+    -1px -1px 0 black;
+    box-shadow: 2px 2px 2px black;
 }
-#visual button{
+#visual button {
     top: 500px;
     left: 40%;
-    position:absolute;
+    position: absolute;
     padding: 10px 20px;
     font-size: 30px;
-    background-color: rgb(255, 117, 140);
-    border: 3px solid white;
+    background-color: transparent;
+    border: 3px solid yellow;
     border-radius: 10px;
-    font-family: times;
+    color: yellow;
     text-shadow: 0 0 5px black;
+    box-shadow: inset 0 0 5px gray,
+    0 0 5px gray;
     
 }
-#visual button:hover{
-    background-color: rgb(255, 58, 91);
-    border: 3px solid rgb(255, 204, 204);
-    border-color: rgb(255, 150, 168);
+#visual button:hover {
+    background-color: yellow;
+    border: 3px solid yellow;
     border-radius: 10px;
-    font-family: times;
-    text-shadow: 0 0 5px white;
-    color: black;
+    color: gray;
+    text-shadow: none;
+    box-shadow: 0 0 5px gray;
     
 }
-#mainCircle{
+#mainCircle {
     text-transform: uppercase;
 }

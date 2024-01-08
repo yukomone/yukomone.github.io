@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Everything</title>
+    <title>Color palette</title>
     <link rel="stylesheet" href="./colors.css">
 </head>
 <body>
     <nav id="banner">
-        <h1>yukomone
-        </h1>
+        <p>Color palette</p>
     </nav>
     <main>
+        <section id="visual">
+            <button onclick="generate()">GENERATE</button>
+                <section id="mainCircle">
+                    <div id="c1">#FFFD8F</div>
+                    <div id="c2">#FFFA00</div>
+                    <div id="c3">#A49500</div>
+                    <div id="c4">#403910</div>
+                    <div id="c5">#0A0700</div>
+                </section>
+        </section>
         <section id="colors">
-            <h3>COLORS</h3>
+            <p id="colorsName">Colors</p>
             <p class="colorHEX" id="colorHEX1">#FFFD8F</p>
             <section class="colorsBorder"><section class="colorsBorder2">
                 <input type="color" name="color1" id="color1" value="#FFFD8F" onchange="color(1)">
@@ -36,26 +45,7 @@
                 <input type="color" name="color5" id="color5" value="#0A0700" onchange="color(5)">
             </section></section>
         </section>
-        <section id="visual">
-            <button onclick="generate()">GENERATE</button>
-                <section id="mainCircle">
-                    <div id="c1">#FFFD8F</div>
-                    <div id="c2">#FFFA00</div>
-                    <div id="c3">#A49500</div>
-                    <div id="c4">#403910</div>
-                    <div id="c5">#0A0700</div>
-                </section>
-
-        </section>
     </main>
-    <aside id="navig">
-        
-        <h3>PAGES</h3>
-        <section class="pages"><p><a href='./../../index.html'>main</a></p></section>
-        <section class="pages"><p><a href='./../../projects/colors/colors.html'>color palette</a></p></section>
-        <section class="pages"><p><a href='./../../projects/weather/weather.html'>weather</a></p></section>
-        <section class="pages"><p><a href='./../../projects/system/index.html'>system</a></p></section>
-    </aside>
     <script src="./script.js"></script>
 </body>
 </html>
