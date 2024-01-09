@@ -1,80 +1,122 @@
-body{
-    margin:0;
+body {
+    margin: 0;
+    background: linear-gradient(90deg, rgba(249,255,0,1) 16%, rgba(0,252,255,1) 46%, rgba(253,45,220,1) 83%);
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-family: 'Nanum Pen Script', cursive;
 }
-body,*{
+#bodyWhite {
+    background-color: white;
+    mix-blend-mode: hard-light;
+}
+#main {
+    background: radial-gradient(rgb(189, 189, 189) 20%, rgba(0,0,0,0) 0),
+    radial-gradient(rgb(189, 189, 189) 20%, rgba(0,0,0,0) 0), transparent;
+    background-position: 0 0, 30px 30px;
+    background-size: 60px 60px;
+    filter: blur(5px);
+    height: 100vh;
+    width: 100%;
+} 
+#mainContent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+#listWrapper {
+    height: 100vh;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+#list {
+    font-size: 3vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100%;
+}
+#list p {
+    margin: 20px 0 20px 0;
+}
+#list a {
+    color: rgb(0, 126, 119);
+    transition: color 0.1s ease-out, text-shadow 0.5s ease-out;
+    padding: 10px;
+}
+#list a:hover {
     color: white;
-    text-align:center;
+    text-shadow: 1px 1px 2px rgb(0, 66, 63), 0 0 1em rgb(0, 66, 63), 0 0 0.2em rgb(0, 66, 63);
 }
-#banner{
+#me {
+    width: 30%;
+}
+#profile {
+    height: calc(100% - 100px);
+    width: 60%;
+    position: relative;
+}
+#profilePic {
+    transform: translate(10%, -20%);
     width: 100%;
-    background-color: rgb(211, 32, 71);
-    line-height: 40px;
-    float:left;
-    font-size: 30px;
-    text-shadow: 1px 1px 15px black;
-}
-h3{
-    font-size: 27px;
-}
-.pages{
-    line-height: 5%;
-    text-align: center;
-    width:100%;
-    float:right;
-    box-sizing: border-box;
-    font-size: 35px;
-}
-.pages a:hover{
-    text-shadow: 0 0 5px rgb(255, 194, 235);
-    color: rgb(0, 0, 0);
-    transition: color 1s ease;
-}
-.pages a{   
-    text-decoration: none;
-    text-shadow: 0 0 5px black;
-}
-main{
-    float:left;
-    box-sizing: border-box;
+    border-radius: 50%;
+    margin-top: 40%;
+}  
+#gradient {
+    display: block;
+    background: radial-gradient(at 89% 81%, hsla(66,100%,50%,1) 0px, transparent 50%),
+    radial-gradient(at 20% 33%, hsla(317,83%,64%,1) 0px, transparent 50%),
+    radial-gradient(at 99% 44%, hsla(317,78%,65%,1) 0px, transparent 50%),
+    radial-gradient(at 100% 4%, hsla(357,92%,79%,1) 0px, transparent 50%),
+    radial-gradient(at 0% 60%, hsla(254,90%,59%,1) 0px, transparent 50%),
+    radial-gradient(at 4% 100%, hsla(108,94%,65%,1) 0px, transparent 50%),
+    radial-gradient(at 32% 10%, hsla(85,85%,64%,1) 0px, transparent 50%),
+    radial-gradient(at 41% 91%, hsla(294,93%,68%,1) 0px, transparent 50%);
+    border-radius: 50%;
     width: 100%;
-    height:1000px;
-    background-color: rgb(255, 141, 166);
+    padding-bottom: 100%;
+    filter: blur(15px);
+    position: absolute;
+    margin-top: 30%;
 }
-.pointing{
-    height:35px;
+#profileUsername {
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 6vw;
+    margin: 0 0 0 2vw;
 }
-.pointing::before{
-    content: "";
-    background: url(./images/pointing2.png);
-    background-repeat: no-repeat;
-    display: inline-block;
-    background-size: 40px 30px;
-    width: 40px;
-    height: 30px;
-    transform: scaleX(-1);
-    vertical-align:middle;
-    margin: 0 5px;
+#profileUsername a {
+    text-decoration: dotted;
+    color: rgb(93, 0, 133);
+    transition: color 0.4s ease-in-out, text-shadow 0.4s ease-in-out;
 }
-.pointing::after{
-    content: "";
-    background: url(./images/pointing2.png);
-    background-repeat: no-repeat;
-    display: inline-block;
-    background-size: 40px 30px;
-    width: 40px;
-    height: 30px;
-    vertical-align:middle;
-    margin: 0 5px;
+#profileUsername a:hover {
+    color: white;
+    text-shadow: 1px 1px 2px rgb(93, 0, 133), 0 0 1em rgb(93, 0, 133), 0 0 0.2em rgb(93, 0, 133);
+
 }
-p:hover > .pointing::after,p:hover > .pointing::before{
-    content: "";
-    background: url(./images/pointing.png);
-    background-repeat: no-repeat;
-    display: inline-block;
-    background-size: 40px 30px;
-    width: 40px;
-    height: 30px;
-    vertical-align:middle;
-    margin: 0 5px;
-    transition: color 1s ease;
+#profileName {
+    font-size: 3vw;
+    margin: 0 0 0 3vw;
+}
+#profileLocation, #profileBio {
+    font-size: 3vw;
+    margin: 0 0 0 3vw;
+}
+#profileInfo p {
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+.material-symbols-outlined {
+    font-size: 2vw !important;
+    margin-right: -2.5vw;
+    margin-left: 3vw;
 }

@@ -6,24 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Everything</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,600,0,200">
+    <link rel="shortcut icon" id="favicon" href="" type="image/x-icon">
 </head>
 <body>
-    <nav id="banner">
-        <h1>yukomone</h1>
-    </nav>
-
-    <main>
-        <section class="pages"><p><a href='./index.html' class="pointing">main</a></p></section>
-        <section class="pages"><p><a href='./projects/colors/colors.html' class="pointing">color palette</a></p></section>
-        <section class="pages"><p><a href='./projects/weather/weather.html' class="pointing">weather</a></p></section>
-        <section class="pages"><p><a href='./projects/system/index.html' class="pointing">system</a></p></section>
-        <section class="pages"><p><a href='./projects/notes/kocienotatki.html' class="pointing">notes</a></p></section>
-        <section class="pages"><p><a href='./projects/csstester/index.html' class="pointing">CSS testing</a></p></section>
-        <section class="pages"><p><a href='./projects/texttools/index.html' class="pointing">text tools</a></p></section>
-        <section class="pages"><p><a href='./projects/colors2/index.html' class="pointing">colors</a></p></section>
-    </main>
-
-    
+    <div id="bodyWhite">
+        <div id="main">
+        </div>
+    </div>
+    <div id="mainContent">
+        <div id="listWrapper"><div id="list">
+                <p><a href='./projects/colors2/index.html'>colors</a></p>
+                <p><a href='./projects/colors/colors.html'>color palette</a></p>
+                <p><a href='./projects/csstester/index.html'>CSS testing</a></p>
+                <p><a href='./projects/notes/kocienotatki.html'>notes</a></p>
+                <p><a href='./projects/system/index.html'>system</a></p>
+                <p><a href='./projects/texttools/index.html'>text tools</a></p>
+                <p><a href='./projects/weather/weather.html'>weather</a></p>
+        </div></div>
+        <div id="me">
+            <div id="profile">
+                <div id="profilePicHld">
+                    <div id="gradient"></div><img id="profilePic" src="" alt="yukomone profile picture">
+                </div>
+                <div id="profileInfo">
+                    <p id="profileUsername"><a href="" target="_blank"></a></p>
+                    <p id="profileName"></p>
+                    <p><span class="material-symbols-outlined">pin_drop</span><span id="profileLocation"></span></p>
+                    <p id="profileBio"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
 <!--
