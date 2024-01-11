@@ -1,0 +1,149 @@
+@media screen and (max-width: 800px) {
+    #main {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #me {
+        width: 100%;
+        height: 20vh;
+    }
+    #profile {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        top: 10px;
+        &-pic {
+            transform: translate(10%, -10%);
+            height: auto;
+            width: 100%;
+            border-radius: 50%;
+            margin-top: 0;
+        }
+        &__pic {
+            &--hld {
+                padding-left: 10%;
+                width: 30%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &--bg {
+                width: 30%;
+                padding-bottom: 30%;
+                margin-top: 0;
+            }
+        }
+        &__info {
+            padding-left: 10%;
+            margin-top: -15px;
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &--username {
+                font-size: 8vw;
+            }
+            &--name {
+                font-size: 6vw;
+                margin: 0 0 0 3vw;
+            }
+            &--location {
+                font-size: 6vw;
+                margin: 0 0 0 3vw;
+            }
+            &--bio {
+                font-size: 6vw;
+                margin: 0 0 0 3vw;
+            }
+        }
+    }
+    .material-symbols-outlined {
+        font-size: 4vw !important;
+    }
+    #list {
+        font-size: 9vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+        &__wrapper {
+            height: 80vh;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+}
+@media screen and (min-width: 450px) and (max-width: 800px) {
+    #me {
+        height: 30vh;
+    }
+    #profile {
+        top: 10px;
+        &-pic {
+            transform: translate(10%, -10%);
+            height: auto;
+            width: 100%;
+            border-radius: 50%;
+            margin-top: 0;
+        }
+        &__pic {
+            &--hld {
+                padding-left: 10%;
+                width: 20%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &--bg {
+                width: 20%;
+                padding-bottom: 20%;
+                margin-top: 0;
+            }
+        }
+        &__info {
+            padding-left: 10%;
+            margin-top: -15px;
+            width: 40%;
+            &--username {
+                font-size: 6vw;
+            }
+            &--name {
+                font-size: 4vw;
+                margin: 0 0 0 3vw;
+            }
+            &--location {
+                font-size: 4vw;
+                margin: 0 0 0 3vw;
+            }
+            &--bio {
+                font-size: 4vw;
+                margin: 0 0 0 3vw;
+            }
+        }
+    }
+    .material-symbols-outlined {
+        font-size: 3vw !important;
+    }
+    #list {
+        font-size: 5vw;
+        &__wrapper {
+            height: 70vh;
+        }
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 800px) {
+    #list {
+        &__wrapper {
+            height: calc(100% - 200px);
+        }
+    }
+}

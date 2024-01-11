@@ -16,12 +16,12 @@ fetch('https://api.github.com/users/yukomone')
         const location = data.location;
         const bio = data.bio;
 
-        document.querySelector('#profilePic').src = avatarUrl;
-        document.querySelector('#profileUsername a').innerHTML = login;
-        document.querySelector('#profileUsername a').href = htmlUrl;
-        document.querySelector('#profileName').innerHTML = name;
-        document.querySelector('#profileLocation').innerHTML = location;
-        //document.querySelector('#profileBio').innerHTML = bio;
+        document.querySelector('#profile-pic').src = avatarUrl;
+        document.querySelector('#profile__info--username a').innerHTML = login;
+        document.querySelector('#profile__info--username a').href = htmlUrl;
+        document.querySelector('#profile__info--name').innerHTML = name;
+        document.querySelector('#profile__info--location').innerHTML = location;
+        //document.querySelector('#profile__info--bio').innerHTML = bio;
         document.querySelector('#favicon').href = avatarUrl;
     })
     .catch(error => {

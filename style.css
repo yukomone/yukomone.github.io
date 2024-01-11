@@ -1,122 +1,274 @@
 body {
-    margin: 0;
-    background: linear-gradient(90deg, rgba(249,255,0,1) 16%, rgba(0,252,255,1) 46%, rgba(253,45,220,1) 83%);
-    height: 100%;
-    width: 100%;
-    position: relative;
-    font-family: 'Nanum Pen Script', cursive;
+  margin: 0;
+  background: linear-gradient(90deg, rgb(249, 255, 0) 16%, rgb(0, 252, 255) 46%, rgb(253, 45, 220) 83%);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  font-family: "Nanum Pen Script", cursive;
 }
-#bodyWhite {
-    background-color: white;
-    mix-blend-mode: hard-light;
+
+#body-background-white {
+  background-color: white;
+  mix-blend-mode: hard-light;
 }
+#body-background-white-dots {
+  background: radial-gradient(rgb(189, 189, 189) 20%, rgba(0, 0, 0, 0) 0), radial-gradient(rgb(189, 189, 189) 20%, rgba(0, 0, 0, 0) 0), transparent;
+  background-position: 0 0, 30px 30px;
+  background-size: 60px 60px;
+  filter: blur(5px);
+  height: 100vh;
+  width: 100%;
+}
+
 #main {
-    background: radial-gradient(rgb(189, 189, 189) 20%, rgba(0,0,0,0) 0),
-    radial-gradient(rgb(189, 189, 189) 20%, rgba(0,0,0,0) 0), transparent;
-    background-position: 0 0, 30px 30px;
-    background-size: 60px 60px;
-    filter: blur(5px);
-    height: 100vh;
-    width: 100%;
-} 
-#mainContent {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: space-between;
-    height: 100%;
-    width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
 }
-#listWrapper {
-    height: 100vh;
-    width: 70%;
-    display: flex;
-    justify-content: space-around;
-}
+
 #list {
-    font-size: 3vw;
+  font-size: 3vw;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+}
+#list__wrapper {
+  height: 100vh;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+}
+#list p {
+  margin: 20px 0 20px 0;
+}
+#list a {
+  color: rgb(0, 126, 119);
+  transition: color 0.1s ease-out, text-shadow 0.5s ease-out;
+  padding: 10px;
+}
+#list a:hover {
+  color: white;
+  text-shadow: 1px 1px 2px #004b47, 0 0 1em #004b47, 0 0 0.2em #004b47;
+}
+
+#me {
+  width: 30%;
+}
+
+#profile {
+  height: calc(100% - 100px);
+  width: 60%;
+  position: relative;
+  top: 0;
+}
+#profile-pic {
+  transform: translate(10%, -20%);
+  width: 100%;
+  border-radius: 50%;
+  margin-top: 40%;
+  padding-left: 0;
+}
+#profile__pic--bg {
+  display: block;
+  background: radial-gradient(at 89% 81%, hsl(66, 100%, 50%) 0px, transparent 50%), radial-gradient(at 20% 33%, hsl(317, 83%, 64%) 0px, transparent 50%), radial-gradient(at 99% 44%, hsl(317, 78%, 65%) 0px, transparent 50%), radial-gradient(at 100% 4%, hsl(357, 92%, 79%) 0px, transparent 50%), radial-gradient(at 0% 60%, hsl(254, 90%, 59%) 0px, transparent 50%), radial-gradient(at 4% 100%, hsl(108, 94%, 65%) 0px, transparent 50%), radial-gradient(at 32% 10%, hsl(85, 85%, 64%) 0px, transparent 50%), radial-gradient(at 41% 91%, hsl(294, 93%, 68%) 0px, transparent 50%);
+  border-radius: 50%;
+  width: 100%;
+  padding-bottom: 100%;
+  filter: blur(15px);
+  position: absolute;
+  margin-top: 30%;
+}
+#profile__info {
+  padding-left: 0;
+  margin-top: 0;
+  display: block;
+}
+#profile__info p {
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
+}
+#profile__info--username {
+  font-family: "Delicious Handrawn", cursive;
+  font-size: 6vw;
+  margin: 0 0 0 2vw;
+}
+#profile__info--username a {
+  text-decoration: dotted;
+  color: rgb(93, 0, 133);
+  transition: color 0.4s ease-in-out, text-shadow 0.4s ease-in-out;
+}
+#profile__info--username a:hover {
+  color: white;
+  text-shadow: 1px 1px 2px rgb(93, 0, 133), 0 0 1em rgb(93, 0, 133), 0 0 0.2em rgb(93, 0, 133);
+}
+#profile__info--name {
+  font-size: 3vw;
+  margin: 0 0 0 3vw;
+}
+#profile__info--location {
+  font-size: 3vw;
+  margin: 0 0 0 3vw;
+}
+#profile__info--bio {
+  font-size: 3vw;
+  margin: 0 0 0 3vw;
+}
+
+.material-symbols-outlined {
+  font-size: 2vw !important;
+  margin-right: -2.5vw;
+  margin-left: 3vw;
+}
+
+@media screen and (max-width: 800px) {
+  #main {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #me {
+    width: 100%;
+    height: 20vh;
+  }
+  #profile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 10px;
+  }
+  #profile-pic {
+    transform: translate(10%, -10%);
+    height: auto;
+    width: 100%;
+    border-radius: 50%;
+    margin-top: 0;
+  }
+  #profile__pic--hld {
+    padding-left: 10%;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #profile__pic--bg {
+    width: 30%;
+    padding-bottom: 30%;
+    margin-top: 0;
+  }
+  #profile__info {
+    padding-left: 10%;
+    margin-top: -15px;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #profile__info--username {
+    font-size: 8vw;
+  }
+  #profile__info--name {
+    font-size: 6vw;
+    margin: 0 0 0 3vw;
+  }
+  #profile__info--location {
+    font-size: 6vw;
+    margin: 0 0 0 3vw;
+  }
+  #profile__info--bio {
+    font-size: 6vw;
+    margin: 0 0 0 3vw;
+  }
+  .material-symbols-outlined {
+    font-size: 4vw !important;
+  }
+  #list {
+    font-size: 9vw;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
-    width: 60%;
+    justify-content: space-evenly;
+    width: 100%;
     height: 100%;
+  }
+  #list__wrapper {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
 }
-#list p {
-    margin: 20px 0 20px 0;
-}
-#list a {
-    color: rgb(0, 126, 119);
-    transition: color 0.1s ease-out, text-shadow 0.5s ease-out;
-    padding: 10px;
-}
-#list a:hover {
-    color: white;
-    text-shadow: 1px 1px 2px rgb(0, 66, 63), 0 0 1em rgb(0, 66, 63), 0 0 0.2em rgb(0, 66, 63);
-}
-#me {
-    width: 30%;
-}
-#profile {
-    height: calc(100% - 100px);
-    width: 60%;
-    position: relative;
-}
-#profilePic {
-    transform: translate(10%, -20%);
+@media screen and (min-width: 450px) and (max-width: 800px) {
+  #me {
+    height: 30vh;
+  }
+  #profile {
+    top: 10px;
+  }
+  #profile-pic {
+    transform: translate(10%, -10%);
+    height: auto;
     width: 100%;
     border-radius: 50%;
-    margin-top: 40%;
-}  
-#gradient {
-    display: block;
-    background: radial-gradient(at 89% 81%, hsla(66,100%,50%,1) 0px, transparent 50%),
-    radial-gradient(at 20% 33%, hsla(317,83%,64%,1) 0px, transparent 50%),
-    radial-gradient(at 99% 44%, hsla(317,78%,65%,1) 0px, transparent 50%),
-    radial-gradient(at 100% 4%, hsla(357,92%,79%,1) 0px, transparent 50%),
-    radial-gradient(at 0% 60%, hsla(254,90%,59%,1) 0px, transparent 50%),
-    radial-gradient(at 4% 100%, hsla(108,94%,65%,1) 0px, transparent 50%),
-    radial-gradient(at 32% 10%, hsla(85,85%,64%,1) 0px, transparent 50%),
-    radial-gradient(at 41% 91%, hsla(294,93%,68%,1) 0px, transparent 50%);
-    border-radius: 50%;
-    width: 100%;
-    padding-bottom: 100%;
-    filter: blur(15px);
-    position: absolute;
-    margin-top: 30%;
-}
-#profileUsername {
-    font-family: 'Delicious Handrawn', cursive;
-    font-size: 6vw;
-    margin: 0 0 0 2vw;
-}
-#profileUsername a {
-    text-decoration: dotted;
-    color: rgb(93, 0, 133);
-    transition: color 0.4s ease-in-out, text-shadow 0.4s ease-in-out;
-}
-#profileUsername a:hover {
-    color: white;
-    text-shadow: 1px 1px 2px rgb(93, 0, 133), 0 0 1em rgb(93, 0, 133), 0 0 0.2em rgb(93, 0, 133);
-
-}
-#profileName {
-    font-size: 3vw;
-    margin: 0 0 0 3vw;
-}
-#profileLocation, #profileBio {
-    font-size: 3vw;
-    margin: 0 0 0 3vw;
-}
-#profileInfo p {
     margin-top: 0;
-    margin-bottom: 0;
-    width: 100%;
+  }
+  #profile__pic--hld {
+    padding-left: 10%;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #profile__pic--bg {
+    width: 20%;
+    padding-bottom: 20%;
+    margin-top: 0;
+  }
+  #profile__info {
+    padding-left: 10%;
+    margin-top: -15px;
+    width: 40%;
+  }
+  #profile__info--username {
+    font-size: 6vw;
+  }
+  #profile__info--name {
+    font-size: 4vw;
+    margin: 0 0 0 3vw;
+  }
+  #profile__info--location {
+    font-size: 4vw;
+    margin: 0 0 0 3vw;
+  }
+  #profile__info--bio {
+    font-size: 4vw;
+    margin: 0 0 0 3vw;
+  }
+  .material-symbols-outlined {
+    font-size: 3vw !important;
+  }
+  #list {
+    font-size: 5vw;
+  }
+  #list__wrapper {
+    height: 70vh;
+  }
 }
-.material-symbols-outlined {
-    font-size: 2vw !important;
-    margin-right: -2.5vw;
-    margin-left: 3vw;
-}
+@media screen and (min-width: 700px) and (max-width: 800px) {
+  #list__wrapper {
+    height: calc(100% - 200px);
+  }
+}/*# sourceMappingURL=style.css.map */
