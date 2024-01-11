@@ -1,0 +1,119 @@
+@import 'styles/variables';
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Dongle', sans-serif;
+    background-color: black;
+}
+p {
+    margin: 0;
+    color: lighten($pink, 55%);
+}
+#main {
+    width: 70%;
+    height: 100%;
+    background-color: $pink;
+    box-shadow: 0px 0px 33px 0px lighten($pink, 30%);
+    border-left: 7px dashed lighten($pink, 20%);
+    border-right: 7px dashed lighten($pink, 20%);
+}
+#input-section {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    &__input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        width: 100%;
+    }
+    input[type="text"] {
+        border: none;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 20px;
+        width: 40%;
+        height: 55px;
+        padding-inline: 0;
+        padding-block: 0;
+        padding-left: 20px;
+        color: black;
+        font-size: 40px;
+        padding-top: 5px;
+        font-family: 'Dongle', sans-serif;
+        background-color: lighten($pink, 65%);
+    }
+    #go {
+        border: none;
+        border-bottom-right-radius: 20px;
+        border-top-right-radius: 20px;
+        width: 10%;
+        height: 60px;
+        margin-left: -4px;
+        font-size: 40px;
+        padding-top: 5px;
+        font-family: 'Dongle', sans-serif;
+        font-weight: 700;
+        background-color: lighten($pink, 20%);
+        color: lighten($pink, 65%);
+        cursor: pointer;
+        transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+        &:hover { 
+            background-color: lighten($pink, 15%);
+            color: white;
+        }
+    }
+}
+#title {
+    font-size: 72px;
+    font-weight: 700;
+    color: white;
+    &__closest-record {
+        font-size: 50px;
+        color: lighten($pink, 65%);
+    }
+    &__chart {
+        font-size: 50px;
+        color: lighten($pink, 65%);
+    }
+}
+#response {
+    width: 100%;
+    height: 80%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+#chart {
+    width: 80%;
+    height: 400px;
+}
+path {
+    stroke: lighten($pink, 60%);
+}
+svg { 
+    rect {
+        fill: lighten($pink, 10%);
+    }
+    g rect {
+        fill: lighten($pink, 40%);
+    }
+}
+text {
+    fill: lighten($pink, 65%);
+    font-size: 17px;
+}
+#current {
+    font-size: 40px;
+}
+
+@import 'styles/mobile';
