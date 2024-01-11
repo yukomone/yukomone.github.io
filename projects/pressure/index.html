@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pressure</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="main">
+        <div id="input-section">
+            <p id="title">Pressure</p>
+            <div id="input-section__input">
+                <input type="text" id="town" placeholder="Enter city name...">
+                <button id="go">GO</button>
+            </div>
+        </div>
+        <div id="response">
+            <p id="title__closest-record">Closest record</p>
+            <p id="current"></p>
+            <p id="title__chart">Chart</p>
+            <div id="chart"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
