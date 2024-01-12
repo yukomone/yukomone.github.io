@@ -4,29 +4,33 @@ let lat, lon, cityName, errorEmpty;
 document.querySelector('#go').addEventListener('click', search);
 
 async function search() {
-    cityName = document.querySelector('#town').ariaValueMax;
+    cityName = document.querySelector('#town').value;
     await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${cityName}&count=1`)
     .then(response => response.json())
     .then(data => {
         const results = data.results;
-        if (results.length > 0) {
+        if (results) {
             const city = results[0];
             lat = city.latitude;
             lon = city.longitude;
+
+            document.querySelector('#response').innerHTML = `
+            <p id="title__closest-record">Closest record</p>
+            <p id="current"></p>
+            <p id="title__chart">Chart</p>
+            <div id="chart"></div>`;
         } else {
-            errorEmpty = "Cannot find town";
+            document.querySelector('#response').innerHTML = `<p id="title__chart">Cannot find town</p>`;
         }
     })
     .catch(error => {
         console.error('Error (with lat&lon): ', error);
     });
     document.querySelector('#response').style.display = 'flex';
-    if(errorEmpty == "") document.querySelector('#current').innerHTML = `Cannot find town`;
     await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current=surface_pressure&hourly=surface_pressure&past_days=3&forecast_days=4`)
     .then(response => response.json())
     .then(data => {
         const results = data;
-        console.log(results);
         currentTime = new Date(results.current.time);
         var hour = currentTime.getHours();
         var minute = currentTime.getMinutes();
@@ -63,6 +67,7 @@ async function search() {
 
         google.charts.load('current', {'packages':['corechart']});
         google.charts.setOnLoadCallback(drawChart);
+
 
         function drawChart() {
             var data = google.visualization.arrayToDataTable([
