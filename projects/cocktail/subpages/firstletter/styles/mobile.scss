@@ -1,0 +1,162 @@
+@media screen and (max-width: 1300px) {
+    #output {
+        gap: 40px;
+        .drink__section {
+            height: 500px;
+            &--sub {
+                height: 450px;
+                .drink__img {
+                    height: 160px;
+                }
+            }
+        }
+    }
+    .drink__recipe {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 1150px) {
+    #output {
+        gap: 40px;
+        .drink__section {
+            width: 30%;
+            height: 600px;
+            .drink__title {
+                font-size: 30px;
+                margin: 0;
+                padding: 0;
+            }
+            &--sub {
+                height: 500px;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+                .drink__img {
+                    height: 160px;
+                }
+            }
+            &--ingr {
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: row;
+                width: 100%;
+                margin: 10px 0 0 0;
+            }
+        }
+    }
+    .drink__ingredients-list {
+        padding: 0;
+        width: 35%;
+    }
+    .drink__recipe {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 950px) {
+    #output {
+        gap: 20px;
+        .drink__section {
+            width: 40%;
+            height: 500px;
+            .drink__title {
+                font-size: 25px;
+                margin: 0;
+                padding: 0;
+            }
+            &--sub {
+                height: 400px;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+                .drink__img {
+                    height: 160px;
+                }
+            }
+            &--ingr {
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: row;
+                width: 100%;
+                margin: 10px 0 0 0;
+            }
+        }
+    }
+    .drink__ingredients-list {
+        padding: 0;
+    }
+    .drink__recipe {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 750px) {
+    #output {
+        gap: 20px;
+        .drink__section {
+            width: 60%;
+            height: 500px;
+            .drink__title {
+                font-size: 25px;
+                margin: 0;
+                padding: 0;
+            }
+            &--sub {
+                height: 400px;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+                .drink__img {
+                    height: 160px;
+                }
+            }
+            &--ingr {
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: row;
+                width: 100%;
+                margin: 10px 0 0 0;
+            }
+        }
+    }
+    .drink__ingredients-list {
+        padding: 0;
+    }
+    .drink__recipe {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 450px) {
+    #output {
+        gap: 20px;
+        .drink__section {
+            width: 60%;
+            height: 600px;
+            .drink__title {
+                font-size: 25px;
+                margin: 0;
+                padding: 0;
+            }
+            &--sub {
+                height: 525px;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: column;
+                .drink__img {
+                    height: 160px;
+                }
+            }
+            &--ingr {
+                justify-content: space-evenly;
+                align-items: center;
+                flex-direction: row;
+                width: 100%;
+                margin: 10px 0 0 0;
+            }
+        }
+    }
+    .drink__ingredients-list {
+        padding: 0;
+    }
+    .drink__recipe {
+        width: 50%;
+    }
+}
