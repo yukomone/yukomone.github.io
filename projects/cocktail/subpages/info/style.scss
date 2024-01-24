@@ -16,7 +16,7 @@ body {
         text-shadow: 5px 5px 3px rgba(255, 255, 255, 0.3);
     }
     #select {
-        &__ingredient {  
+        &__ingredient--info {  
         height: 40px;
         width: 220px;
         padding-left: 10px;
@@ -37,11 +37,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 20px;
-    .drink__section {
-        width: 15%;
-        height: 280px;
+    .ingr__section {
+        width: 65%;
+        height: 550px;
         border: 2px solid rgb(255, 213, 0);
         border-radius: 10px;
         display: flex;
@@ -49,18 +47,24 @@ body {
         align-items: center;
         flex-direction: column;
         box-shadow: 5px 5px 3px rgba(255, 213, 0, 0.5);
-        .drink__title {
-            font-size: 20px;
-            padding: 0 5px 0 5px;
+        .ingr__title {
+            font-size: 30px;
             margin: 0;
             text-align: center;
         }
-        .drink__img {
-            height: 175px;
-            border-radius: 20px;
-            border: 2px solid rgb(255, 213, 0);
+        .ingr__desc {
+            font-size: 20px;
+            padding: 0 30px 0 30px;
+            height: 70%;
+            margin: 0 10px 0 10px;
+            text-align: center;
+            overflow: auto;
+            scrollbar-color: rgb(32, 32, 32) #000000;
+        }
+        .ingr__alc {
+            font-size: 20px;
+            margin: 0;
+            text-align: center;
         }
     }
 }
-
-@import "styles/mobile";
