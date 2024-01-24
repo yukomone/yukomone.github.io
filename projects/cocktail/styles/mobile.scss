@@ -1,0 +1,79 @@
+@media screen and (max-width: 1200px) {
+    body {
+        p {
+            font-size: 70px;
+            padding-top: 30px;
+        }
+    }
+    main {
+        height: calc(100% - 100px);
+    }
+    .links {
+        height: 100%;
+        width: 70%;
+        &__elem {
+            p {
+                padding-left: 20px;
+            }
+            span {
+                padding-right: 30px;
+                padding-bottom: 12px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1000px) {
+    .links {
+        &__elem {
+            p {
+                font-size: 35px;
+                padding-left: 20px;
+            }
+            span {
+                font-size: 60px;
+                padding-right: 30px;
+                padding-bottom: 12px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 860px) {
+    .links {
+        &__elem {
+            p {
+                font-size: 30px;
+                padding-top: 10px;
+            }
+            span {
+                font-size: 50px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 750px) {
+    .links {
+        &__elem {
+            p {
+                font-size: 25px;
+                padding-top: 6px;
+            }
+            span {
+                font-size: 45px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 750px) {
+    .links {
+        &__elem {
+            p {
+                padding-left: 15px;
+            }
+            span {
+                padding-right: 20px;
+            }
+        }
+    }
+}
