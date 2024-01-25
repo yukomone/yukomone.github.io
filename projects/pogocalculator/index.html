@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <section id="title-section">
+            <div id="title-hrs">
+                <hr>
+                <p id="title">Pokemon GO<br>shop calculator</p>
+                <hr>
+            </div>
+            <div id="buttonbox">
+                <input type="number" id="boxcost" placeholder="Box value..." min="0">
+                <button onclick="location.reload()">RESET</button>
+            </div>
+        </section>
+        <section id="shop">
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/Item_1408.png?raw=true" alt="">
+                <p>remote raid pass</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="remote" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/Item_1402.png?raw=true" alt="">
+                <p>premium battle pass</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="premium" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/EggIncubatorIAP_Activated.png?raw=true" alt="">
+                <p>egg incubator</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="egginc" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/EggIncubatorSuper_Empty.png?raw=true" alt="">
+                <p>super incubator</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="superinc" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/Item_0704.png?raw=true" alt="">
+                <p>poffin</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="poffin" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/pokeball_sprite.png?raw=true" alt="">
+                <p>poke ball</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="pokeball" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/Incense_0.png?raw=true" alt="">
+                <p>incense</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="incense" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/TR_hideout_icon_leader.png?raw=true" alt="">
+                <p>rocket radar</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="rocket" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/starpiece.png?raw=true" alt="">
+                <p>star piece</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="star" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/luckyegg.png?raw=true" alt="">
+                <p>lucky egg</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="luckyegg" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/Item_0104.png?raw=true" alt="">
+                <p>max potion</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="potion" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/Item_0202.png?raw=true" alt="">
+                <p>max revive</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="revive" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/TroyKey_glacial.png?raw=true" alt="">
+                <p>glacial lure module</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="glacial" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/TroyKey_moss.png?raw=true" alt="">
+                <p>mossy lure module</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="mossy" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/TroyKey_magnetic.png?raw=true" alt="">
+                <p>magnetic lure module</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="magnetic" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/TroyKey_rainy.png?raw=true" alt="">
+                <p>rainy lure module</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="rainy" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/TroyKey.png?raw=true" alt="">
+                <p>lure module</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="lure" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/itemstorageupgrade.1.png?raw=true" alt="">
+                <p>item bag</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="itembag" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/pokemonstorageupgrade.1.png?raw=true" alt="">
+                <p>pokemon storage</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="storage" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/Item_postcardstorageupgrade.1.png?raw=true" alt="">
+                <p>postcard page</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="postcard" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>  
+            <div class="item">
+                <img src="https://github.com/PokeMiners/pogo_assets/blob/master/Images/Stickers/sticker_6anniv_1.png?raw=true" alt="">
+                <p>sticker</p>
+                <div class="count">
+                    <p class="substract"><span class="symbol">-</span></p>
+                    <input type="number" id="sticker" value="0" min="0">
+                    <p class="add"><span class="symbol">+</span></p>
+                </div>
+            </div>           
+        </section>
+    </main>
+    <div id="outputbox">
+        <div id="output">
+            <p>TOTAL</p>
+            <div id="outputcoins">
+                <img src='https://github.com/PokeMiners/pogo_assets/blob/master/Images/Items/Item_COIN_01.png?raw=true'><span>0</span>
+            </div>
+        </div>
+        <p id="saving"></p>
+    </div>
+    <!--last price update: 25.01.2024-->
+    <script src="./script.js"></script>
+</body>
+</html>
